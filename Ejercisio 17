@@ -1,0 +1,22 @@
+import math
+
+# Solicitar el radio al usuario
+try:
+    radio = float(input("Ingresa el radio del círculo: "))
+
+    # Verificar si el radio es un valor positivo
+    if radio <= 0:
+        print("El radio debe ser un número positivo.")
+    else:
+        # Calcular el área del círculo: Área = pi * radio^2
+        area = math.pi * (radio ** 2)
+
+        # Calcular la longitud de la circunferencia: Longitud = 2 * pi * radio
+        longitud = 2 * math.pi * radio
+
+        # Mostrar los resultados
+        print(f"\nEl área del círculo es: {area:.2f}")
+        print(f"La longitud de la circunferencia es: {longitud:.2f}")
+
+except ValueError:
+    print("Entrada no válida. Por favor, ingresa un número.")
