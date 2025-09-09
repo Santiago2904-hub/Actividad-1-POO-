@@ -1,0 +1,22 @@
+# Se solicita al usuario que ingrese la edad de Juan
+try:
+    edad_juan = float(input("Por favor, ingresa la edad de Juan: "))
+
+    # Se valida que la edad sea un número positivo
+    if edad_juan <= 0:
+        print("La edad debe ser un número positivo.")
+    else:
+        # Se calculan las edades de Alberto, Ana y la mamá
+        edad_alberto = (2 / 3) * edad_juan
+        edad_ana = (4 / 3) * edad_juan
+        edad_mama = edad_juan + edad_alberto + edad_ana
+
+        # Se imprimen los resultados
+        print("\nResultados:")
+        print(f"Edad de Juan: {edad_juan:.2f} años")
+        print(f"Edad de Alberto: {edad_alberto:.2f} años")
+        print(f"Edad de Ana: {edad_ana:.2f} años")
+        print(f"Edad de la mamá: {edad_mama:.2f} años")
+
+except ValueError:
+    print("Entrada inválida. Por favor, ingresa un número.") 
