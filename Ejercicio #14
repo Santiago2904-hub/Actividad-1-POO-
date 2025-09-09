@@ -1,0 +1,19 @@
+# Se solicita al usuario que ingrese un número.
+# La función float() permite manejar números con decimales.
+try:
+    numero = float(input("Por favor, ingresa un número: "))
+
+    # Se calcula el cuadrado usando el operador de potencia **
+    cuadrado = numero ** 2
+
+    # Se calcula el cubo usando el mismo operador
+    cubo = numero ** 3
+
+    # Se imprimen los resultados usando f-strings para un formato más legible
+    print(f"El número ingresado es: {numero}")
+    print(f"El cuadrado de {numero} es: {cuadrado}")
+    print(f"El cubo de {numero} es: {cubo}")
+
+except ValueError:
+    # Este bloque maneja el error si el usuario no ingresa un número válido
+    print("Entrada inválida. Por favor, asegúrate de ingresar un número.")
